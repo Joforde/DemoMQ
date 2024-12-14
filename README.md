@@ -1,7 +1,5 @@
-## 架构设计
 设计思路：参考 BookKeeper 的客户端一致性协议，使用S3做存储\
 涉及到的技术点：网络通信、序列化、
-
 [!集群模式](../images/demomq_cluster.png)
 
 ## 通信协议
@@ -21,8 +19,3 @@ Pulsar 使用了 NIO 框架 netty 做网络层，使用 protobuf 实现编解码
 RocketMQ 5.0 的 Proxy 使用了 RPC 框架：gRPC 实现网路层。
 
 基于框架可以节省很多开发成本，因此 DemoMQ 选择了 [gRPC](https://grpc.io/docs/languages/java/quickstart/) 的方案
-
-## 一致性协议
-
-## 对象存储
-
