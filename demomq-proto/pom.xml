@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>examples</artifactId>
+    <artifactId>demomq-proto</artifactId>
     <packaging>jar</packaging>
 
-    <name>examples</name>
+    <name>demomq-proto</name>
     <url>http://maven.apache.org</url>
 
     <properties>
