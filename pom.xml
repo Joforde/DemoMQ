@@ -15,6 +15,7 @@
         <module>demomq-common</module>
         <module>examples</module>
         <module>demomq-proto</module>
+        <module>exercise</module>
     </modules>
 
     <properties>
