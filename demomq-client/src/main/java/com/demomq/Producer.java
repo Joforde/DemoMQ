@@ -44,6 +44,7 @@ public class Producer {
             Producer client = new Producer(channel);
             while (true){
                 client.sendMessage("hello world");
+                TimeUnit.SECONDS.sleep(1);
             }
         } finally {
             // ManagedChannels use resources like threads and TCP connections. To prevent leaking these
@@ -54,7 +55,10 @@ public class Producer {
     }
 
     public void sendMessage(String message) {
-        SendMessageResponse response = blockingStub.sendMessage(SendMessageRequest.newBuilder().addMessages(Message.newBuilder().setBody(ByteString.copyFrom(message.getBytes())).build()).build());
+        SendMessageResponse response = blockingStub.sendMessage(SendMessageRequest.newBuilder()
+                .addMessages(Message.newBuilder()
+                        .setBody(ByteString.copyFromUtf8(message))
+                        .build()).build());
         logger.info(response.toString());
     }
 }
