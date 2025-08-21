@@ -39,5 +39,26 @@
             <artifactId>netty-codec</artifactId>
             <version>4.1.122.Final</version>
         </dependency>
+
+        <!-- JClouds BlobStore API -->
+        <dependency>
+            <groupId>org.apache.jclouds</groupId>
+            <artifactId>jclouds-blobstore</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+        <!-- S3 API -->
+        <dependency>
+            <groupId>org.apache.jclouds</groupId>
+            <artifactId>jclouds-allblobstore</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+        <!-- HTTP Client Driver -->
+        <dependency>
+            <groupId>org.apache.jclouds.driver</groupId>
+            <artifactId>jclouds-apachehc</artifactId>
+            <version>2.6.0</version>
+        </dependency>
     </dependencies>
 </project>
